@@ -24,7 +24,8 @@ A parameterized AXI4 Master and Slave BFM implemented in Verilog.
 - AXI4 Slave: Memory-mapped slave with 256-word internal SRAM
 - Full 5-channel handshake: AW / W / B / AR / R channels
 - Parameterized DATA_WIDTH, ADDR_WIDTH, ID_WIDTH
-
+## Waveform
+![AXI4 Waveform](docs/waveform.png)
 ## Features
 - Write address latching with separate write-response FSM
 - Read burst counter with rlast generation
