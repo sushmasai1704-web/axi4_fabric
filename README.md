@@ -26,6 +26,9 @@ A parameterized AXI4 Master and Slave BFM implemented in Verilog.
 - Parameterized DATA_WIDTH, ADDR_WIDTH, ID_WIDTH
 ## Waveform
 ![AXI4 Waveform](docs/waveform.png)
+<img width="1895" height="972" alt="image" src="https://github.com/user-attachments/assets/c1023f27-a9f4-45cd-87e8-f6f9be708a64" />
+<img width="1901" height="959" alt="image" src="https://github.com/user-attachments/assets/7ffd070b-eaa6-42e9-90f6-fbe35f987662" />
+
 ## Features
 - Write address latching with separate write-response FSM
 - Read burst counter with rlast generation
