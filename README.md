@@ -1,7 +1,22 @@
 # AXI4 Master-Slave Interconnect
 
+![Language](https://img.shields.io/badge/Language-Verilog-blue)
+![Simulator](https://img.shields.io/badge/Simulator-Icarus%20Verilog-green)
+![Protocol](https://img.shields.io/badge/Protocol-AMBA%20AXI4-orange)
+![Status](https://img.shields.io/badge/Status-Verified-brightgreen)
+
 A parameterized AXI4 Master and Slave BFM implemented in Verilog,
 verified with Icarus Verilog and GTKWave.
+
+## Block Diagram
+
+    ┌─────────────────────┐         ┌─────────────────────┐
+    │     AXI4 Master     │──AW────▶│                     │
+    │                     │──W─────▶│     AXI4 Slave      │
+    │  FSM-based          │◀─B──────│   256-word SRAM     │
+    │  Controller         │──AR────▶│                     │
+    │                     │◀─R──────│                     │
+    └─────────────────────┘         └─────────────────────┘
 
 ## Architecture
 
