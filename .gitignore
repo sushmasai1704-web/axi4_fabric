@@ -1,0 +1,4 @@
+*.vcd
+*.vvp
+sim/axi4_sim
+README.md.save

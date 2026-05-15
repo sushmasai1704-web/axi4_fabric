@@ -103,4 +103,16 @@ module tb_axi4;
         $display("\nAll AXI4 transactions complete!");
         $finish;
     end
+
+    // AXI4 Assertions instantiation
+    axi4_assertions #(.DATA_WIDTH(DW), .ADDR_WIDTH(AW)) u_assert (
+        .clk     (clk),
+        .resetn  (rst_n),
+        .awvalid (awvalid), .awready (awready),
+        .wvalid  (wvalid),  .wready  (wready),  .wlast  (wlast),
+        .bvalid  (bvalid),  .bready  (bready),
+        .arvalid (arvalid), .arready (arready),
+        .rvalid  (rvalid),  .rready  (rready),  .rlast  (rlast)
+    );
+
 endmodule

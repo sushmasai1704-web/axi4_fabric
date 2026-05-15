@@ -82,3 +82,9 @@ verified with Icarus Verilog and GTKWave.
 - FSM-based handshake design
 - Parameterized RTL coding
 - Waveform-based verification
+
+## Verification
+- 6 AXI4 protocol assertions active during simulation
+- Checks: AWVALID/WVALID/ARVALID/RVALID stability, WLAST ordering, BREADY timeout
+- All assertions passed with zero violations across 3 write + 3 read transactions
+
